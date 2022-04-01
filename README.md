@@ -1,10 +1,12 @@
+Welcome to my website. 
+
 ## About me:
 
 I am Parsa Yazdi, a structural engineer and a software developer. I have a few years of experience in engineering analysis and design. In the recent years I am mainly focused on developing softwares to automate analysis and design of softwares. This includes codes and api's in Python, C#, etc.
 
 ## About this site:
 
-Welcome to my website.  Here I post brief information about myself, the links that I like to share with my audience and the content that I want them to read.
+Here I post brief information about myself, the links that I like to share with my audience and the content that I want them to read.
 
 
 ## Contact Information:
