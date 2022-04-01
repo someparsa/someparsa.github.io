@@ -17,4 +17,4 @@ If you prefer to talk or chat to me, here is my number **0098 912 621 5096**. By
 
 You can send me emails on GMail and HotMail domains using my name and family name in this format: **parsa (dot) yazdi**. My Skype account is searchable on these.
 
-Handle for my Github, Twitter, Facebook and Instagram accounts is *someparsa*; however, most of these accounts are private! But you may find me on LinkedIn with my username which is **parsayazdi**. I love professional connections and I sometimes write some paragraphs there.
+Handle for my Github, Twitter, Facebook and Instagram accounts is **someparsa**; however, most of these accounts are private! But you may find me on LinkedIn with my username which is **parsayazdi**. I love professional connections and I sometimes write some paragraphs there.
