@@ -1,13 +1,9 @@
 title: Parsa Yazdi's web
-author:
-  name: Parsa Yazdi
-  email: "parsa.yazdi@gmail.com"
 
 description: >
   structural engineer + hobbyist programmer
 
 theme: minima
-
 
 header_pages:
   - resume.md
