@@ -2,15 +2,5 @@ title: Parsa Yazdi's web
 
 description: structural engineer + hobbyist programmer
 
-theme: minima
-
-minima:
-  social_links:
-    - { platform: github, user_url: "https://github.com/someparsa" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/parsayazdi" }
-    - { platform: twitter, user_url: "https://twitter.com/someparsa" }
-
-header_pages:
-  - resume.md
-
-show_excerpts: false
+show_downloads: false
+theme: jekyll-theme-architect
