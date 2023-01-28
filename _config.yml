@@ -13,4 +13,4 @@ minima:
 header_pages:
   - resume.md
 
-show_excerpts: true
+show_excerpts: false
