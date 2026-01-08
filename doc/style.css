@@ -1,90 +1,153 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root{
+  /* Persian-inspired palette */
+  --bg: #f7f6f3;                 /* warm ivory background */
+  --panel: #ffffff;              /* clean paper white */
+  --text: #1f2933;               /* deep charcoal */
+  --muted: #5f6c7b;              /* soft slate */
+  --border: #d8d5ce;             /* warm manuscript border */
+
+  --link: #1c3faa;               /* Persian blue */
+  --link-hover: #162f82;         /* darker indigo */
+
+  --accent: #c9a24d;             /* subtle Persian gold */
+  --accent-soft: #f3eddc;        /* gold wash */
+
+  --nav-active-bg: #eef1fb;      /* blue-tinted paper */
+  --nav-active-border: #c7d2f2;
+
+  --max: 1100px;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.6;
-  background: #f7f7f7;
-  color: #222;
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  min-height: 100vh;
-}
-
-/* LEFT COLUMN */
-.sidebar {
-  background: #ffffff;
-  padding: 2rem 1.5rem;
-  border-right: 1px solid #ddd;
-}
-
-.sidebar h2 {
-  margin-bottom: 1rem;
-}
-
-.sidebar h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #444;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  margin-bottom: 0.4rem;
-}
-
-.sidebar a {
+a{
+  color: var(--link);
   text-decoration: none;
-  color: #0056b3;
+  transition: color 0.15s ease;
 }
-
-.sidebar a:hover {
+a:hover{
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
-/* RIGHT COLUMN */
-.content {
-  padding: 3rem;
-  background: #fafafa;
+.topbar{
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fafafa 100%
+  );
+  border-bottom: 1px solid var(--border);
 }
 
-.content h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.2rem;
+.topbar-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{
+  font-weight:700;
+  letter-spacing:0.2px;
+}
+.brand small{
+  display:block;
+  font-weight:400;
+  color:var(--muted);
+  font-size:0.95rem;
+  margin-top:2px;
 }
 
-.subtitle {
-  color: #666;
-  margin-bottom: 1.5rem;
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:22px 20px 50px;
+  display:grid;
+  grid-template-columns: 280px 1fr;
+  gap:22px;
 }
 
-.content h2 {
-  margin-top: 2rem;
-  margin-bottom: 0.6rem;
+.sidebar{
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fbfbfd 100%
+  );
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  height: fit-content;
+  position: sticky;
+  top: 18px;
 }
 
-.content ul {
-  margin-left: 1.2rem;
+
+.nav h3{
+  margin:0 0 10px;
+  font-size:1.05rem;
+}
+.nav a{
+  display:block;
+  padding:8px 10px;
+  border-radius:10px;
+  color:var(--text);
+}
+.nav a:hover{
+  background:#f3f4f6;
+  text-decoration:none;
+}
+.nav a.active{
+  background: var(--nav-active-bg);
+  border: 1px solid var(--nav-active-border);
+  font-weight: 600;
 }
 
-/* MOBILE FRIENDLY */
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
 
-  .sidebar {
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
+.sidebar .block{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+.main{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:26px;
+}
+
+h1{ margin:0 0 10px; font-size:2rem; }
+h2{ margin:22px 0 10px; font-size:1.35rem; }
+p{ margin:10px 0; }
+ul{ margin:10px 0 10px 18px; }
+
+.card{
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 14px 0;
+  background: #ffffff;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+@media (max-width: 900px){
+  .wrap{ grid-template-columns: 1fr; }
+  .sidebar{ position: static; }
 }
