@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HERA MBIE Research Hub Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="HERA MBIE Research Hub home">
+        <span class="brand-mark">H</span>
+        <span>
+          <strong>HERA Research Hub</strong>
+          <small>MBIE programme prototype</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#resources">Resources</a>
+        <a href="#courses">Courses</a>
+        <a href="#process">Publication Pathway</a>
+        <a href="#leaders">Theme Leaders</a>
+        <a href="#about">About HERA</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <div class="beam beam-one"></div>
+          <div class="beam beam-two"></div>
+          <div class="structure-grid">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">MBIE-funded research collaboration</p>
+          <h1 id="hero-title">A shared hub for HERA research software, case studies, and citable outputs.</h1>
+          <p>
+            This concept website gives each working group a consistent place to present code,
+            software, datasets, papers, and industrial case studies with GitHub version control,
+            Zenodo archiving, DOI links, and short release summaries.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#resources">Browse resources</a>
+            <a class="button secondary" href="#process">View publishing workflow</a>
+          </div>
+        </div>
+        <aside class="release-panel" aria-label="Latest release snapshot">
+          <span class="status">Prototype release model</span>
+          <h2>Featured hub prototype</h2>
+          <p>HERA MBIE research outputs web hub concept</p>
+          <dl>
+            <div><dt>Version</dt><dd>Concept v0.1</dd></div>
+            <div><dt>DOI</dt><dd>Not yet archived</dd></div>
+            <div><dt>Maintainer</dt><dd>Parsa Yazdi, University of Waikato</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="intro-strip" aria-label="Hub summary">
+        <article>
+          <strong>One catalogue</strong>
+          <span>Searchable records for software, case studies, reports, and papers.</span>
+        </article>
+        <article>
+          <strong>Citable releases</strong>
+          <span>Each GitHub release is archived on Zenodo with version metadata and DOI.</span>
+        </article>
+        <article>
+          <strong>Team ownership</strong>
+          <span>Working groups keep their own repositories while using a shared presentation standard.</span>
+        </article>
+        <article>
+          <strong>Courses and training</strong>
+          <span>Short learning modules help partners use the tools and understand research methods.</span>
+        </article>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Working groups</p>
+          <h2>Research themes and university teams</h2>
+          <p>
+            The hub can give each group a public-facing project page with a summary, contributors,
+            key outputs, repository links, DOI records, and current release status.
+          </p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <span class="team-code">WG-01</span>
+            <h3>AI and Engineering</h3>
+            <p>University of Waikato</p>
+            <ul>
+              <li>Machine learning for steel design workflows</li>
+              <li>Decision-support notebooks and model cards</li>
+              <li>Case studies for industry adoption</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <span class="team-code">WG-02</span>
+            <h3>Smart Structures</h3>
+            <p>University of Auckland</p>
+            <ul>
+              <li>Sensor data pipelines and digital twins</li>
+              <li>Structural health monitoring examples</li>
+              <li>Benchmark datasets and validation reports</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <span class="team-code">WG-03</span>
+            <h3>Manufacturing and Fabrication</h3>
+            <p>Partner university placeholder</p>
+            <ul>
+              <li>Automation tools for fabrication planning</li>
+              <li>Quality assurance case studies</li>
+              <li>Open templates for reproducible tests</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <span class="team-code">WG-04</span>
+            <h3>Sustainability and Resilience</h3>
+            <p>Partner university placeholder</p>
+            <ul>
+              <li>Lifecycle analysis models</li>
+              <li>Low-emissions steel design examples</li>
+              <li>Policy-ready research summaries</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources" class="section resource-section">
+        <div class="section-heading">
+          <p class="eyebrow">Tools and resources</p>
+          <h2>Catalogue of research outputs</h2>
+          <p>
+            This sample catalogue shows how software, notebooks, datasets, papers, and case studies
+            can be presented with release metadata in one place.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter resources">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="software">Software</button>
+          <button class="filter-button" type="button" data-filter="notebook">Notebooks</button>
+          <button class="filter-button" type="button" data-filter="case-study">Case studies</button>
+          <button class="filter-button" type="button" data-filter="paper">Papers</button>
+        </div>
+
+        <div class="resource-grid" id="resourceGrid">
+          <article class="resource-card" data-type="software">
+            <div class="card-top">
+              <span class="tag">Software</span>
+              <span class="version">v0.3.0</span>
+            </div>
+            <h3>Steel Connection Digital Twin Toolkit</h3>
+            <p>
+              Python package and example workflows for calibrating connection models from
+              laboratory and sensor data.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>Smart Structures</dd></div>
+              <div><dt>DOI</dt><dd>10.5281/zenodo.xxxxxx</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#" aria-label="Open GitHub repository for Steel Connection Digital Twin Toolkit">GitHub</a>
+              <a href="#" aria-label="Open Zenodo record for Steel Connection Digital Twin Toolkit">Zenodo</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-type="notebook">
+            <div class="card-top">
+              <span class="tag">Notebook</span>
+              <span class="version">v1.1.2</span>
+            </div>
+            <h3>AI-Assisted Member Design Examples</h3>
+            <p>
+              Reproducible Jupyter notebooks showing model training, validation, and design
+              interpretation for structural engineering tasks.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>AI and Engineering</dd></div>
+              <div><dt>DOI</dt><dd>10.5281/zenodo.xxxxxx</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">GitHub</a>
+              <a href="#">Zenodo</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-type="case-study">
+            <div class="card-top">
+              <span class="tag">Case study</span>
+              <span class="version">2026.01</span>
+            </div>
+            <h3>Bridge Monitoring Demonstrator</h3>
+            <p>
+              Industrial case study summarising data collection, model assumptions, validation
+              results, and adoption pathway for infrastructure monitoring.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>Smart Structures</dd></div>
+              <div><dt>Status</dt><dd>Ready for review</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Read summary</a>
+              <a href="#">Dataset</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-type="paper">
+            <div class="card-top">
+              <span class="tag">Paper</span>
+              <span class="version">Accepted manuscript</span>
+            </div>
+            <h3>Responsible AI for Steel Engineering Workflows</h3>
+            <p>
+              Paper record linking publication, source code, trained model release, citation text,
+              and reproducibility checklist.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>AI and Engineering</dd></div>
+              <div><dt>Repository</dt><dd>Linked</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Paper</a>
+              <a href="#">Code release</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-type="software">
+            <div class="card-top">
+              <span class="tag">Software</span>
+              <span class="version">v0.1.0</span>
+            </div>
+            <h3>Fabrication QA Image Pipeline</h3>
+            <p>
+              Prototype computer vision pipeline for documenting weld quality checks and
+              producing traceable evidence packs.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>Manufacturing and Fabrication</dd></div>
+              <div><dt>DOI</dt><dd>Pending release</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">GitHub</a>
+              <a href="#">Release plan</a>
+            </div>
+          </article>
+
+          <article class="resource-card" data-type="case-study">
+            <div class="card-top">
+              <span class="tag">Case study</span>
+              <span class="version">Draft</span>
+            </div>
+            <h3>Low-Carbon Design Options Catalogue</h3>
+            <p>
+              Short industry-facing summaries that connect lifecycle models, design options,
+              assumptions, and supporting technical reports.
+            </p>
+            <dl>
+              <div><dt>Team</dt><dd>Sustainability and Resilience</dd></div>
+              <div><dt>Status</dt><dd>In preparation</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Preview</a>
+              <a href="#">Methods</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="courses" class="section courses-section">
+        <div class="section-heading">
+          <p class="eyebrow">Courses</p>
+          <h2>Training modules for researchers, students, and industry partners</h2>
+          <p>
+            Course pages can package recorded workshops, notebooks, slides, example datasets,
+            assessment material, and links to the relevant research artifacts.
+          </p>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="card-top">
+              <span class="tag">Foundation</span>
+              <span class="version">6 modules</span>
+            </div>
+            <h3>Research Software and Reproducible Releases</h3>
+            <p>
+              Practical guidance for GitHub repositories, version tags, documentation,
+              licensing, Zenodo archiving, DOI citation, and release notes.
+            </p>
+            <dl>
+              <div><dt>Audience</dt><dd>All working groups</dd></div>
+              <div><dt>Format</dt><dd>Workshop + checklist</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Course page</a>
+              <a href="#">Template repo</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-top">
+              <span class="tag">Technical</span>
+              <span class="version">8 modules</span>
+            </div>
+            <h3>AI for Steel Engineering Applications</h3>
+            <p>
+              Introductory and applied material on data preparation, model validation,
+              uncertainty, responsible AI, and engineering interpretation.
+            </p>
+            <dl>
+              <div><dt>Lead</dt><dd>University of Waikato</dd></div>
+              <div><dt>Artifacts</dt><dd>Notebooks + papers</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Start course</a>
+              <a href="#">Notebooks</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-top">
+              <span class="tag">Applied</span>
+              <span class="version">4 modules</span>
+            </div>
+            <h3>Smart Structures and Monitoring Data</h3>
+            <p>
+              Training for sensor data workflows, digital twin calibration, data quality,
+              field deployment records, and industry-facing case study reporting.
+            </p>
+            <dl>
+              <div><dt>Lead</dt><dd>University of Auckland</dd></div>
+              <div><dt>Artifacts</dt><dd>Datasets + software</dd></div>
+            </dl>
+            <div class="card-actions">
+              <a href="#">Course page</a>
+              <a href="#">Case studies</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="section process-section">
+        <div class="section-heading">
+          <p class="eyebrow">Publication pathway</p>
+          <h2>From research output to citable release</h2>
+          <p>
+            A shared checklist can help every team publish outputs in the same professional,
+            reproducible format.
+          </p>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span>01</span>
+            <h3>Create a GitHub repository</h3>
+            <p>Include README, licence, contributors, installation notes, and a minimal working example.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Version the output</h3>
+            <p>Tag stable releases using semantic versioning for software or date-based versions for reports.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Archive with Zenodo</h3>
+            <p>Connect GitHub to Zenodo, archive each release, and record the DOI and citation text.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Publish a hub record</h3>
+            <p>Add the short description, team, version, DOI, related paper, and maintenance status.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="leaders" class="section leaders-section">
+        <div class="section-heading">
+          <p class="eyebrow">People</p>
+          <h2>Programme and theme leaders</h2>
+          <p>
+            The live hub can include approved biographies, contact routes, institutional affiliations,
+            and responsibility areas.
+          </p>
+        </div>
+        <div class="leader-grid">
+          <article>
+            <span class="avatar">PY</span>
+            <h3>Prototype Maintainer</h3>
+            <p>Parsa Yazdi, University of Waikato. Maintains the concept hub structure, prototype records, and publication workflow examples.</p>
+          </article>
+          <article>
+            <span class="avatar">AW</span>
+            <h3>AI and Engineering Theme Lead</h3>
+            <p>Owns software, model governance, notebooks, and reproducible AI workflows.</p>
+          </article>
+          <article>
+            <span class="avatar">SS</span>
+            <h3>Smart Structures Theme Lead</h3>
+            <p>Owns monitoring datasets, digital twin tools, validation plans, and sensor case studies.</p>
+          </article>
+          <article>
+            <span class="avatar">IR</span>
+            <h3>Industry Reference Lead</h3>
+            <p>Connects research outputs with member needs, deployment examples, and implementation guidance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-band">
+        <div>
+          <p class="eyebrow">About HERA</p>
+          <h2>Connecting research outputs with New Zealand heavy engineering impact.</h2>
+        </div>
+        <p>
+          This prototype positions HERA as the coordinating body for a transparent, citable,
+          and industry-readable research programme. The final website could use approved HERA
+          branding, actual working group names, live repository data, and real DOI records.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>HERA MBIE Research Hub prototype</span>
+      <span>Concept page for team leader discussion</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
