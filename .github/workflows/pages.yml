@@ -28,13 +28,20 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Assemble site
+      - name: Assemble Jekyll source
         run: |
-          mkdir -p _site/doc _site/hera_ai
-          cp -R doc/. _site/
-          cp -R doc/. _site/doc/
-          cp -R hera_ai/. _site/hera_ai/
-          touch _site/.nojekyll
+          mkdir -p _source
+          printf '%s\n' '---' 'layout: default' '---' > _source/index.md
+          cat README.md >> _source/index.md
+          cp _config.yml _source/
+          cp -R doc _source/doc
+          cp -R hera_ai _source/hera_ai
+
+      - name: Build root site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./_source
+          destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
