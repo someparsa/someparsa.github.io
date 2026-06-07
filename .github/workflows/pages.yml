@@ -28,10 +28,18 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Assemble site
+        run: |
+          mkdir -p _site/doc _site/hera_ai
+          cp -R doc/. _site/
+          cp -R doc/. _site/doc/
+          cp -R hera_ai/. _site/hera_ai/
+          touch _site/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: hera_ai
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
