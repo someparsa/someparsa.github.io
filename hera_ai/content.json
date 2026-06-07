@@ -1,0 +1,201 @@
+{
+  "site": {
+    "name": "HERA Research Hub",
+    "shortName": "H",
+    "subtitle": "MBIE programme prototype",
+    "description": "A shared hub for HERA research software, case studies, and citable outputs.",
+    "navigation": [
+      { "label": "Home", "href": "index.html", "page": "home" },
+      { "label": "Projects", "href": "projects.html", "page": "projects" },
+      { "label": "Resources", "href": "resources.html", "page": "resources" },
+      { "label": "Courses", "href": "courses.html", "page": "courses" },
+      { "label": "Publication Pathway", "href": "process.html", "page": "process" },
+      { "label": "People", "href": "people.html", "page": "people" },
+      { "label": "About HERA", "href": "about.html", "page": "about" }
+    ],
+    "footer": [
+      "HERA MBIE Research Hub prototype",
+      "Concept website for programme discussion"
+    ]
+  },
+  "home": {
+    "eyebrow": "MBIE-funded research collaboration",
+    "title": "A shared hub for HERA research software, case studies, and citable outputs.",
+    "description": "This concept website gives each working group a consistent place to present code, software, datasets, papers, and industrial case studies with GitHub version control, Zenodo archiving, DOI links, and short release summaries.",
+    "actions": [
+      { "label": "Browse resources", "href": "resources.html", "style": "primary" },
+      { "label": "View publishing workflow", "href": "process.html", "style": "secondary" }
+    ],
+    "featured": {
+      "status": "Prototype release model",
+      "title": "Featured hub prototype",
+      "description": "HERA MBIE research outputs web hub concept",
+      "metadata": [
+        { "label": "Version", "value": "Concept v0.1" },
+        { "label": "DOI", "value": "Not yet archived" },
+        { "label": "Maintainer", "value": "Parsa Yazdi, University of Waikato" }
+      ]
+    },
+    "highlights": [
+      { "title": "One catalogue", "description": "Searchable records for software, case studies, reports, and papers." },
+      { "title": "Citable releases", "description": "Each GitHub release is archived on Zenodo with version metadata and DOI." },
+      { "title": "Team ownership", "description": "Working groups keep their own repositories while using a shared presentation standard." },
+      { "title": "Courses and training", "description": "Short learning modules help partners use the tools and understand research methods." }
+    ],
+    "modules": [
+      { "eyebrow": "Working groups", "title": "Projects", "description": "Explore research themes, participating institutions, and each team's areas of work.", "href": "projects.html" },
+      { "eyebrow": "Research outputs", "title": "Resources", "description": "Browse software, notebooks, datasets, papers, and industry case studies.", "href": "resources.html" },
+      { "eyebrow": "Training", "title": "Courses", "description": "Find learning modules for researchers, students, and industry partners.", "href": "courses.html" },
+      { "eyebrow": "Reproducibility", "title": "Publication Pathway", "description": "Follow the shared process from a working repository to a citable release.", "href": "process.html" }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Working groups",
+    "title": "Research themes and university teams",
+    "description": "Each group has a public-facing project record with a summary, contributors, key outputs, repository links, DOI records, and current release status.",
+    "items": [
+      {
+        "code": "WG-01",
+        "title": "AI and Engineering",
+        "institution": "University of Waikato",
+        "summary": "Machine learning and decision-support methods for steel engineering applications.",
+        "topics": ["Machine learning for steel design workflows", "Decision-support notebooks and model cards", "Case studies for industry adoption"],
+        "actions": [{ "label": "View resources", "href": "resources.html?team=AI%20and%20Engineering" }]
+      },
+      {
+        "code": "WG-02",
+        "title": "Smart Structures",
+        "institution": "University of Auckland",
+        "summary": "Data-driven monitoring and digital-twin workflows for structural systems.",
+        "topics": ["Sensor data pipelines and digital twins", "Structural health monitoring examples", "Benchmark datasets and validation reports"],
+        "actions": [{ "label": "View resources", "href": "resources.html?team=Smart%20Structures" }]
+      },
+      {
+        "code": "WG-03",
+        "title": "Manufacturing and Fabrication",
+        "institution": "Partner university placeholder",
+        "summary": "Automation and quality-assurance resources for fabrication workflows.",
+        "topics": ["Automation tools for fabrication planning", "Quality assurance case studies", "Open templates for reproducible tests"],
+        "actions": [{ "label": "View resources", "href": "resources.html?team=Manufacturing%20and%20Fabrication" }]
+      },
+      {
+        "code": "WG-04",
+        "title": "Sustainability and Resilience",
+        "institution": "Partner university placeholder",
+        "summary": "Research supporting lower-emissions and more resilient steel design decisions.",
+        "topics": ["Lifecycle analysis models", "Low-emissions steel design examples", "Policy-ready research summaries"],
+        "actions": [{ "label": "View resources", "href": "resources.html?team=Sustainability%20and%20Resilience" }]
+      }
+    ]
+  },
+  "resources": {
+    "eyebrow": "Tools and resources",
+    "title": "Catalogue of research outputs",
+    "description": "Software, notebooks, datasets, papers, and case studies are presented with release metadata in one place.",
+    "filters": [
+      { "label": "All", "value": "all" },
+      { "label": "Software", "value": "software" },
+      { "label": "Notebooks", "value": "notebook" },
+      { "label": "Case studies", "value": "case-study" },
+      { "label": "Papers", "value": "paper" }
+    ],
+    "items": [
+      {
+        "type": "software", "typeLabel": "Software", "version": "v0.3.0", "title": "Steel Connection Digital Twin Toolkit",
+        "description": "Python package and example workflows for calibrating connection models from laboratory and sensor data.",
+        "metadata": [{ "label": "Team", "value": "Smart Structures" }, { "label": "DOI", "value": "10.5281/zenodo.xxxxxx" }],
+        "actions": [{ "label": "GitHub", "href": "#" }, { "label": "Zenodo", "href": "#" }]
+      },
+      {
+        "type": "notebook", "typeLabel": "Notebook", "version": "v1.1.2", "title": "AI-Assisted Member Design Examples",
+        "description": "Reproducible Jupyter notebooks showing model training, validation, and design interpretation for structural engineering tasks.",
+        "metadata": [{ "label": "Team", "value": "AI and Engineering" }, { "label": "DOI", "value": "10.5281/zenodo.xxxxxx" }],
+        "actions": [{ "label": "GitHub", "href": "#" }, { "label": "Zenodo", "href": "#" }]
+      },
+      {
+        "type": "case-study", "typeLabel": "Case study", "version": "2026.01", "title": "Bridge Monitoring Demonstrator",
+        "description": "Industrial case study summarising data collection, model assumptions, validation results, and adoption pathway for infrastructure monitoring.",
+        "metadata": [{ "label": "Team", "value": "Smart Structures" }, { "label": "Status", "value": "Ready for review" }],
+        "actions": [{ "label": "Read summary", "href": "#" }, { "label": "Dataset", "href": "#" }]
+      },
+      {
+        "type": "paper", "typeLabel": "Paper", "version": "Accepted manuscript", "title": "Responsible AI for Steel Engineering Workflows",
+        "description": "Paper record linking publication, source code, trained model release, citation text, and reproducibility checklist.",
+        "metadata": [{ "label": "Team", "value": "AI and Engineering" }, { "label": "Repository", "value": "Linked" }],
+        "actions": [{ "label": "Paper", "href": "#" }, { "label": "Code release", "href": "#" }]
+      },
+      {
+        "type": "software", "typeLabel": "Software", "version": "v0.1.0", "title": "Fabrication QA Image Pipeline",
+        "description": "Prototype computer vision pipeline for documenting weld quality checks and producing traceable evidence packs.",
+        "metadata": [{ "label": "Team", "value": "Manufacturing and Fabrication" }, { "label": "DOI", "value": "Pending release" }],
+        "actions": [{ "label": "GitHub", "href": "#" }, { "label": "Release plan", "href": "#" }]
+      },
+      {
+        "type": "case-study", "typeLabel": "Case study", "version": "Draft", "title": "Low-Carbon Design Options Catalogue",
+        "description": "Industry-facing summaries connecting lifecycle models, design options, assumptions, and supporting technical reports.",
+        "metadata": [{ "label": "Team", "value": "Sustainability and Resilience" }, { "label": "Status", "value": "In preparation" }],
+        "actions": [{ "label": "Preview", "href": "#" }, { "label": "Methods", "href": "#" }]
+      }
+    ]
+  },
+  "courses": {
+    "eyebrow": "Courses",
+    "title": "Training for researchers, students, and industry partners",
+    "description": "Course pages package workshops, notebooks, slides, example datasets, assessment material, and links to relevant research outputs.",
+    "items": [
+      {
+        "level": "Foundation", "duration": "6 modules", "title": "Research Software and Reproducible Releases",
+        "description": "Practical guidance for GitHub repositories, version tags, documentation, licensing, Zenodo archiving, DOI citation, and release notes.",
+        "metadata": [{ "label": "Audience", "value": "All working groups" }, { "label": "Format", "value": "Workshop + checklist" }],
+        "actions": [{ "label": "Course page", "href": "#" }, { "label": "Template repo", "href": "#" }]
+      },
+      {
+        "level": "Technical", "duration": "8 modules", "title": "AI for Steel Engineering Applications",
+        "description": "Introductory and applied material on data preparation, model validation, uncertainty, responsible AI, and engineering interpretation.",
+        "metadata": [{ "label": "Lead", "value": "University of Waikato" }, { "label": "Artifacts", "value": "Notebooks + papers" }],
+        "actions": [{ "label": "Start course", "href": "#" }, { "label": "Notebooks", "href": "#" }]
+      },
+      {
+        "level": "Applied", "duration": "4 modules", "title": "Smart Structures and Monitoring Data",
+        "description": "Training for sensor data workflows, digital twin calibration, data quality, field deployment records, and industry-facing case study reporting.",
+        "metadata": [{ "label": "Lead", "value": "University of Auckland" }, { "label": "Artifacts", "value": "Datasets + software" }],
+        "actions": [{ "label": "Course page", "href": "#" }, { "label": "Case studies", "href": "#" }]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Publication pathway",
+    "title": "From research output to citable release",
+    "description": "A shared checklist helps every team publish outputs in a consistent, professional, and reproducible format.",
+    "steps": [
+      { "number": "01", "title": "Create a GitHub repository", "description": "Include README, licence, contributors, installation notes, and a minimal working example." },
+      { "number": "02", "title": "Version the output", "description": "Tag stable releases using semantic versioning for software or date-based versions for reports." },
+      { "number": "03", "title": "Archive with Zenodo", "description": "Connect GitHub to Zenodo, archive each release, and record the DOI and citation text." },
+      { "number": "04", "title": "Publish a hub record", "description": "Add the short description, team, version, DOI, related paper, and maintenance status." }
+    ]
+  },
+  "people": {
+    "eyebrow": "People",
+    "title": "Programme and theme leaders",
+    "description": "Approved biographies, contact routes, institutional affiliations, and responsibility areas can be maintained here.",
+    "items": [
+      { "initials": "PY", "name": "Prototype Maintainer", "affiliation": "Parsa Yazdi, University of Waikato", "description": "Maintains the concept hub structure, prototype records, and publication workflow examples." },
+      { "initials": "AW", "name": "AI and Engineering Theme Lead", "affiliation": "Programme role placeholder", "description": "Owns software, model governance, notebooks, and reproducible AI workflows." },
+      { "initials": "SS", "name": "Smart Structures Theme Lead", "affiliation": "Programme role placeholder", "description": "Owns monitoring datasets, digital twin tools, validation plans, and sensor case studies." },
+      { "initials": "IR", "name": "Industry Reference Lead", "affiliation": "Programme role placeholder", "description": "Connects research outputs with member needs, deployment examples, and implementation guidance." }
+    ]
+  },
+  "about": {
+    "eyebrow": "About HERA",
+    "title": "Connecting research outputs with New Zealand heavy engineering impact.",
+    "paragraphs": [
+      "This prototype positions HERA as the coordinating body for a transparent, citable, and industry-readable research programme.",
+      "The final website can use approved HERA branding, confirmed working group names, live repository data, real DOI records, and maintained programme contacts."
+    ],
+    "principles": [
+      { "title": "Transparent", "description": "Research outputs are clearly described, versioned, and linked to their supporting evidence." },
+      { "title": "Citable", "description": "Stable releases connect repository records with archival DOI references." },
+      { "title": "Industry-readable", "description": "Technical work is accompanied by concise summaries, practical context, and adoption guidance." }
+    ]
+  }
+}
